@@ -105,8 +105,11 @@ After data preprocessing and feature engineering the dataset has following featu
 * Payback
 * T24Club
 
-### Algorithm:
-K Means is used for clustering customers based on most of the features stated above. Clustering is done on store basis and on scaled data. K is decided by training silhouette score individually for each store.
+### Algorithms:
+* K Means is used for clustering customers based on most of the features stated above. Clustering is done on store basis and on scaled data. K is decided by training silhouette score individually for each store.
+* Hierchical clustering based on most of the features stated above. Clustering is done on store basis and on scaled data. Number of clusters is decided from dedrograms.
+
+![dendrogram](https://github.com/deepakgupta1/Future-Datathon-Clustering-Customers/blob/master/dendrogram.png)
 
 ### Behaviour of clusters:
 Since there are different number of clusters for different stores so each of them have different behavior.
@@ -140,7 +143,7 @@ There are 4 clusters for this store.
 |  3 |  1 |379   |54      |0.5   |0.5   |0.5   |0   |0   |0   |0   |
 |  4 |  1 |459  |42       |0.33   | 0.67  | 0  | 0  | 0  | 0.3  | 0  |
 
-Observations:
+**Observations**:
 * Cluster 1, 2 have some female customers, rest have all male customers.
 * Not much variation in age.
 * Only customers of cluster 2 seem to use promocode.
@@ -149,7 +152,7 @@ Observations:
 
 So, the customers can be clustered based on prices of products, promos available on those products. Age and gender are also influential features in clustering.
 
-Major libraries used:
+### Major libraries:
 * Sklearn
 * Pandas
 * Numpy
