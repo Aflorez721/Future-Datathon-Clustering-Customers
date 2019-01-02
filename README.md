@@ -24,86 +24,86 @@ Cluster Big Bazaar customers based on their shopping and other data given.
 
 ### Clustering Approach.
 After data preprocessing and feature engineering the dataset has following features:
-•	customerID
-•	DOB
-•	Gender
-•	State
-•	PinCode
-•	transactionDate
-•	store_code
-•	store_description
-•	till_no
-•	transaction_number_by_till
-•	promo_code
-•	promotion_description
-•	product_code
-•	product_description
-•	sale_price_after_promo
-•	discountUsed
-•	age
-•	age_on_transaction_date
-•	promo_used
-•	ANDHRA PRADESH
-•	ASSAM
-•	BIHAR
-•	CHANDIGARH
-•	CHATTISGARH
-•	DELHI
-•	DUMMY
-•	GOA
-•	GUJARAT
-•	HARYANA
-•	HIMACHAL PRADESH
-•	JAMMU AND KASHMIR
-•	JHARKHAND
-•	KARNATAKA
-•	KERALA
-•	MADHYA PRADESH
-•	MAHARASHTRA
-•	MANIPUR
-•	ORISSA
-•	Other
-•	PUNJAB
-•	RAJASTHAN
-•	SIKKIM
-•	TAMIL NADU
-•	TRIPURA
-•	UTTAR PRADESH
-•	UTTARANCHAL
-•	WEST BENGAL
-•	missing_state
-•	x
-•	till_1
-•	till_2
-•	till_3
-•	till_4
-•	till_5
-•	till_6
-•	till_7
-•	till_8
-•	till_9
-•	till_10
-•	till_11
-•	till_12
-•	till_13
-•	till_14
-•	till_15
-•	till_16
-•	till_17
-•	till_18
-•	till_19
-•	till_20
-•	till_21
-•	till_22
-•	till_23
-•	till_24
-•	till_25
-•	BBProfitClub
-•	BBSavingsClub
-•	FGShoppingFest
-•	FuturePrivilegeClub
-•	Payback
-•	T24Club
+* customerID
+* DOB
+* Gender
+* State
+* PinCode
+* transactionDate
+* store_code
+* store_description
+* till_no
+* transaction_number_by_till
+* promo_code
+* promotion_description
+* product_code
+* product_description
+* sale_price_after_promo
+* discountUsed
+* age
+* age_on_transaction_date
+* promo_used
+* ANDHRA PRADESH
+* ASSAM
+* BIHAR
+* CHANDIGARH
+* CHATTISGARH
+* DELHI
+* DUMMY
+* GOA
+* GUJARAT
+* HARYANA
+* HIMACHAL PRADESH
+* JAMMU AND KASHMIR
+* JHARKHAND
+* KARNATAKA
+* KERALA
+* MADHYA PRADESH
+* MAHARASHTRA
+* MANIPUR
+* ORISSA
+* Other
+* PUNJAB
+* RAJASTHAN
+* SIKKIM
+* TAMIL NADU
+* TRIPURA
+* UTTAR PRADESH
+* UTTARANCHAL
+* WEST BENGAL
+* missing_state
+* x
+* till_1
+* till_2
+* till_3
+* till_4
+* till_5
+* till_6
+* till_7
+* till_8
+* till_9
+* till_10
+* till_11
+* till_12
+* till_13
+* till_14
+* till_15
+* till_16
+* till_17
+* till_18
+* till_19
+* till_20
+* till_21
+* till_22
+* till_23
+* till_24
+* till_25
+* BBProfitClub
+* BBSavingsClub
+* FGShoppingFest
+* FuturePrivilegeClub
+* Payback
+* T24Club
 
 ### Algorithm:
 K Means is used for clustering customers based on most of the features stated above. Clustering is done on store basis and on scaled data. K is decided by training silhouette score individually for each store.
@@ -115,12 +115,12 @@ The most influential features in clusters appear to be Gender, sales_price_after
 Let’s see for store 4843:
 There are 5 clusters for this store. Since there are lot of features based on which clustering is done so it’s not possible to plot the centroids of clusters, but here I give the centroid interpretations of 5 clusters for this store.
 
-|CentroidNum|  Gender | Sale_price_after_promo  | Age  | Promo_used  | BBProfitClub  | BBSavingsClub  | FGShoppingFest  | FuturePrivelegeClub  | Payback  | T24Club  |
+|CentroidNum|Gender|Sale_price_after_promo|Age|Promo_used|BBProfitClub|BBSavingsClub|FGShoppingFest|FuturePrivelegeClub|Payback|T24Club|
 |--:|--:|--:|--:|---|---|---|---|---|---|---|
-|   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |
-|   |   |   |   |   |   |   |   |   |   |   |
+| 1  | 0.859  | 122  |41   |0.3   |0.07   |0.03   |0.03   |0.003   |0.9   |0.3   |
+| 2 |  0.893 |517   |39   |0.55   |0.06   |0.04   |0.01   |0.01   |0.9   |0.3   |
+|  3 |   |   |   |   |   |   |   |   |   |   |
+|  4 |   |   |   |   |   |   |   |   |   |   |
 CentroidNum	Gender	Sale_price_after_promo	Age	Promo_used	BBProfitClub	BBSavingsClub	FGShoppingFest	FuturePrivelegeClub	Payback	T24Club
 1	0.859	122	41	0.3	0.07	0.03	0.03	0.003	0.9	0.3
 2	0.893	517	39	0.55	0.06	0.04	0.01	0.01	0.9	0.3
