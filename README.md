@@ -119,14 +119,9 @@ There are 5 clusters for this store. Since there are lot of features based on wh
 |--:|--:|--:|--:|---|---|---|---|---|---|---|
 | 1  | 0.859  | 122  |41   |0.3   |0.07   |0.03   |0.03   |0.003   |0.9   |0.3   |
 | 2 |  0.893 |517   |39   |0.55   |0.06   |0.04   |0.01   |0.01   |0.9   |0.3   |
-|  3 |   |   |   |   |   |   |   |   |   |   |
-|  4 |   |   |   |   |   |   |   |   |   |   |
-CentroidNum	Gender	Sale_price_after_promo	Age	Promo_used	BBProfitClub	BBSavingsClub	FGShoppingFest	FuturePrivelegeClub	Payback	T24Club
-1	0.859	122	41	0.3	0.07	0.03	0.03	0.003	0.9	0.3
-2	0.893	517	39	0.55	0.06	0.04	0.01	0.01	0.9	0.3
-3	1	267	34	0.4	0.2	0	0	0	1	0.4
-4	1	155	31	0.6	0	0	0.1	0	0.9	0.1
-5	1	99	51	1	0	0	0	0	1	0
+|  3 |  1 |267   |34   |0.4   |0.2   |0   |0   |0   |1   |0.4   |
+|  4 |  1 | 155  |31   |0.6   | 0  | 0  | 0.1  | 0  | 0.9  | 0.1  |
+|  5 |  1 | 99  |51   |1   | 0  | 0  | 0  | 0  | 1  | 0  |
 
 **Observations**:
 * Cluster 1, 2 have some female customers, rest have all male customers.
@@ -138,11 +133,12 @@ CentroidNum	Gender	Sale_price_after_promo	Age	Promo_used	BBProfitClub	BBSavingsC
 Let’s also take store 2615 for comparison:
 There are 4 clusters for this store.
 
-CentroidNum	Gender	Sale_price_after_promo	Age	Promo_used	BBProfitClub	BBSavingsClub	FGShoppingFest	FuturePrivelegeClub	Payback	T24Club
-1	0.857	148	43	0.41	0.58	0.16	0.06	0.001	0.42	0.08
-2	0.911	484	41	0.66	0.3	0.3	0.06	0	0.45	0.08
-3	1	379	54	0.5	0.5	0.5	0	0	0	0
-4	1	459	42	0.33	0.67	0	0	0	0.3	0
+|CentroidNum|Gender|Sale_price_after_promo|Age|Promo_used|BBProfitClub|BBSavingsClub|FGShoppingFest|FuturePrivelegeClub|Payback|T24Club|
+|--:|--:|--:|--:|---|---|---|---|---|---|---|
+| 1  | 0.857  | 148  |43  |0.41   |0.58  |0.16   |0.06   |0.001   |0.42   |0.08   |
+| 2 |  0.911 |484   |41   |0.66   |0.3   |0.3   |0.06   |0   |0.45   |0.08   |
+|  3 |  1 |379   |54      |0.5   |0.5   |0.5   |0   |0   |0   |0   |
+|  4 |  1 |459  |42       |0.33   | 0.67  | 0  | 0  | 0  | 0.3  | 0  |
 
 Observations:
 * Cluster 1, 2 have some female customers, rest have all male customers.
